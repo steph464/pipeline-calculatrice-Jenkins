@@ -49,7 +49,7 @@ pipeline {
         stage('Branch') {
             agent any
             steps {
-                echo "${env.BRANCH_NAME}"
+                echo "dev"
             }
         }
     }
