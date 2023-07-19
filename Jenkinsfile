@@ -46,5 +46,11 @@ pipeline {
                 }
             }
         }
+        stage('Branch') {
+            agent any
+            steps {
+                echo "main"
+            }
+        }
     }
 }
