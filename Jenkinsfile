@@ -39,6 +39,7 @@ pipeline {
                     unstash(name: 'compiled-results')
                     sh "docker run --rm -v ${VOLUME} ${IMAGE} 'pyinstaller -F prog.py'"
                 }
+                echo "GitHub webhook est enregistré dans GitHub sur la branche dev"
             }
             post {
                 success {
